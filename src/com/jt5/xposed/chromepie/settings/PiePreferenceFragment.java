@@ -79,9 +79,9 @@ public class PiePreferenceFragment extends PreferenceFragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.actionbar_kill:
-                ((PieSettings) getActivity()).killProcesses(false);
-                return true;
+            //case R.id.actionbar_kill:
+            //    ((PieSettings) getActivity()).killProcesses(false);
+            //    return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
