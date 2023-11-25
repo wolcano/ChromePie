@@ -84,9 +84,9 @@ public class PieSettings extends PreferenceActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_help:
-                showHelpDialog();
-                return true;
+            //case R.id.menu_help:
+            //    showHelpDialog();
+            //    return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
