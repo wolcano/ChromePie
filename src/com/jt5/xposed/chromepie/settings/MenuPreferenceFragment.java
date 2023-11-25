@@ -114,14 +114,14 @@ public class MenuPreferenceFragment extends PreferenceFragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_load_defaults:
-                mPieMenuCat.removeAll();
-                loadDefaultValues(true);
-                loadPreferences();
-                return true;
-            case R.id.actionbar_kill:
-                ((PieSettings) getActivity()).killProcesses(false);
-                return true;
+            //case R.id.menu_load_defaults:
+            //    mPieMenuCat.removeAll();
+            //    loadDefaultValues(true);
+            //    loadPreferences();
+            //    return true;
+            //case R.id.actionbar_kill:
+            //    ((PieSettings) getActivity()).killProcesses(false);
+            //    return true;
             case android.R.id.home:
                 getActivity().finish();
                 return true;
