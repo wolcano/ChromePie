@@ -17,11 +17,11 @@ jobs:
         with:
           submodules: 'recursive'
           fetch-depth: 0
-      - name: Setup JDK 17
+      - name: Setup JDK
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: 16
+          java-version: 8
           cache: 'gradle'
       - name: Retrieve version
         run: |
