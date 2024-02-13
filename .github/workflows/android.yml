@@ -46,7 +46,10 @@ jobs:
           echo 'android.native.buildOutput=verbose' >> gradle.properties
           chmod a+rx gradlew
           #./gradlew --info -PappVerName=${{ env.VERSION }} assembleRelease assembleDebug
-          ./gradlew -PappVerName=${{ env.VERSION }} build
+          ./gradlew -PappVerName=${{ env.VERSION }} build # try building first
+      - name: Setup tmate session
+        if: failure()
+        uses: mxschmitt/action-tmate@v3
       - name: Upload built apk
         if: success()
         uses: actions/upload-artifact@v3
