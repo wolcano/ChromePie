@@ -47,7 +47,7 @@ jobs:
           chmod a+rx gradlew
           #./gradlew --info -PappVerName=${{ env.VERSION }} assembleRelease assembleDebug
           #./gradlew -PappVerName=${{ env.VERSION }} build
-          ./gradlew -PappVerName=${{ env.VERSION }} assembleRelease
+          ./gradlew -PappVerName=${{ env.VERSION }} assembleDebug
 
       #- name: Setup tmate session
       #  if: failure()
