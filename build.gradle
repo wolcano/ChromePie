@@ -21,14 +21,14 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.1'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
     namespace 'com.jt5.xposed.chromepie'
 
     defaultConfig {
         applicationId "com.jt5.xposed.chromepie"
-        minSdkVersion 16
-        targetSdkVersion 23
+        minSdkVersion 21
+        targetSdkVersion 29
     }
 
 	lintOptions {
@@ -47,5 +47,6 @@ android {
 
 dependencies {
     compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly 'de.robv.android.xposed:api:82:sources'
     implementation 'org.apache.commons:commons-lang3:3.4'
 }
