@@ -26,11 +26,11 @@ jobs:
       - name: Retrieve version
         run: |
           echo VERSION=$(echo ${{ github.event.head_commit.id }} | head -c 10) >> $GITHUB_ENV
-      - name: Set up ccache
-        uses: hendrikmuhs/ccache-action@v1.2
-        with:
-          key: ${{ runner.os }}-${{ github.sha }}
-          restore-keys: ${{ runner.os }}
+      #- name: Set up ccache
+      #  uses: hendrikmuhs/ccache-action@v1.2
+      #  with:
+      #    key: ${{ runner.os }}-${{ github.sha }}
+      #    restore-keys: ${{ runner.os }}
       - name: Build with Gradle
         run: |
           echo 'org.gradle.caching=true' >> gradle.properties
