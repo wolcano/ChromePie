@@ -49,6 +49,7 @@ jobs:
           ./gradlew -PappVerName=${{ env.VERSION }} build # try building first
           ./gradlew -PappVerName=${{ env.VERSION }} assembleRelease
           find build
+          find app
       - name: Setup tmate session
         if: failure()
         uses: mxschmitt/action-tmate@v3
