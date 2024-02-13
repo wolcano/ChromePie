@@ -46,23 +46,24 @@ jobs:
           echo 'android.native.buildOutput=verbose' >> gradle.properties
           chmod a+rx gradlew
           #./gradlew --info -PappVerName=${{ env.VERSION }} assembleRelease assembleDebug
-          ./gradlew -PappVerName=${{ env.VERSION }} build # try building first
+          #./gradlew -PappVerName=${{ env.VERSION }} build # try building first
           ./gradlew -PappVerName=${{ env.VERSION }} assembleRelease
-          find build
-          find app
-      - name: Setup tmate session
-        if: failure()
-        uses: mxschmitt/action-tmate@v3
-        timeout-minutes: 3
+          #find build
+          #find app
+      #- name: Setup tmate session
+      #  if: failure()
+      #  uses: mxschmitt/action-tmate@v3
+      #  timeout-minutes: 3
       - name: Upload built apk
         if: success()
         uses: actions/upload-artifact@v3
         with:
           name: snapshot
           path: |
-              app/build/outputs/apk
-              app/build/outputs/mapping
-              app/release
+              build/outputs/apk
+              build/outputs/mapping
+              build/outputs/apk/debug/*.apk
+              build/outputs/apk/release/*.apk
       #- name: Post to channel
         #if: github.ref == 'refs/heads/master'
         #env:
