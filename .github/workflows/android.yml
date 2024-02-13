@@ -49,10 +49,43 @@ jobs:
           #./gradlew -PappVerName=${{ env.VERSION }} build
           ./gradlew -PappVerName=${{ env.VERSION }} assembleRelease
 
-      #- name: Setup tmate session
+      #- name: Setup tmate live debug session
       #  if: failure()
       #  uses: mxschmitt/action-tmate@v3
       #  timeout-minutes: 3
+
+      # sign APK
+      #- uses: AoEiuV020/sign-android-release@v2
+      #  name: Sign hook APK
+      #  env:
+      #    SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+      #  if: ${{ env.SIGNING_KEY != '' }}
+      #  with:
+      #    releaseDirectory: build/outputs/apk/release
+      #    signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+      #    alias: ${{ secrets.ALIAS }}
+      #    keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+      #    keyPassword: ${{ secrets.KEY_PASSWORD }}
+
+      #- name: Android Sign
+      #  # You may pin to the exact commit or the version.
+      #  # uses: Tlaster/android-sign@1c5bf4b2fa309acb0c0ae0bf9379ab458f14d5b1
+      #  uses: Tlaster/android-sign@v1.2.2
+      #  with:
+      #    # The directory to find your release to sign
+      #    releaseDirectory: 
+      #    # The key used to sign your release in base64 encoded format
+      #    signingKeyBase64: 
+      #    # The key alias
+      #    alias: 
+      #    # The password to the keystore
+      #    keyStorePassword: 
+      #    # The password for the key
+      #    keyPassword: # optional
+      #    # The working directory for action, default to build
+      #    buildDirectory: # optional
+      #    # The output directory for sign, default to build/signed
+      #    output: # optional
 
       - name: Upload built apk
         if: success()
