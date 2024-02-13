@@ -21,8 +21,8 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
     namespace 'com.jt5.xposed.chromepie'
 
     defaultConfig {
