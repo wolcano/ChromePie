@@ -46,7 +46,7 @@ jobs:
           echo 'android.native.buildOutput=verbose' >> gradle.properties
           chmod a+rx gradlew
           #./gradlew --info -PappVerName=${{ env.VERSION }} assembleRelease assembleDebug
-          ./gradlew -PappVerName=${{ env.VERSION }} assembleRelease
+          ./gradlew -PappVerName=${{ env.VERSION }} build
       - name: Upload built apk
         if: success()
         uses: actions/upload-artifact@v3
