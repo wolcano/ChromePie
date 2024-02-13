@@ -23,7 +23,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
 //    buildToolsVersion '29.0.3'
-//    namespace 'com.jt5.xposed.chromepie'
+    namespace 'com.jt5.xposed.chromepie'
 
     defaultConfig {
         applicationId "com.jt5.xposed.chromepie"
