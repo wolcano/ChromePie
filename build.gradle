@@ -1,3 +1,4 @@
+/*
 # buildscript {
 #    repositories {
 #        mavenCentral()
@@ -35,6 +36,7 @@
 #        google()
 #    }
 # }
+*/
 
 pluginManagement {
     repositories {
@@ -59,14 +61,14 @@ include ':app'
 include ':libxposed-compat'
 
 
-# apply plugin: 'com.android.application'
+// apply plugin: 'com.android.application'
 plugins {
     id 'com.android.application' version '8.9.1' apply false
     id 'org.lsposed.lsplugin.jgit' version "1.1"
 }
-# plugins {
-#    id 'com.android.application'
-# }
+// plugins {
+//   id 'com.android.application'
+// }
 
 android {
     compileSdkVersion 29
@@ -95,8 +97,8 @@ android {
 }
 
 dependencies {
-    # compileOnly 'de.robv.android.xposed:api:82'
-    # compileOnly 'de.robv.android.xposed:api:82:sources'
+    // compileOnly 'de.robv.android.xposed:api:82'
+    // compileOnly 'de.robv.android.xposed:api:82:sources'
     compileOnly 'io.github.libxposed:api:100'
-    # implementation 'org.apache.commons:commons-lang3:3.4'
+    // implementation 'org.apache.commons:commons-lang3:3.4'
 }
