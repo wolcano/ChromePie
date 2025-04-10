@@ -1,50 +1,49 @@
-/*
-# buildscript {
-#    repositories {
-#        mavenCentral()
-#        exclusiveContent {
-#	    forRepository {
-#	        mavenCentral()
-#	    }
-#	    filter {
-#	        includeGroup "de.robv.android.xposed"
-#	    }
-#        }
-#        jcenter()
-#	maven { url "https://plugins.gradle.org/m2/" }
-#        google()
-#    }
-#
-#    dependencies {
-#        classpath 'com.android.tools.build:gradle:4.0.0'
-#    }
-# }
-#
-# allprojects {
-#    repositories {
-#        mavenCentral()
-#        exclusiveContent {
-#	    forRepository {
-#	        mavenCentral()
-#	    }
-#	    filter {
-#	        includeGroup "de.robv.android.xposed"
-#	    }
-#        }
-#        jcenter()
-#	maven { url "https://plugins.gradle.org/m2/" }
-#        google()
-#    }
-# }
-*/
-
-pluginManagement {
+buildscript {
     repositories {
         gradlePluginPortal()
         google()
         mavenCentral()
     }
 }
+/*
+	mavenCentral()
+        exclusiveContent {
+	    forRepository {
+	        mavenCentral()
+	    }
+	    filter {
+	        includeGroup "de.robv.android.xposed"
+	    }
+        }
+        jcenter()
+	maven { url "https://plugins.gradle.org/m2/" }
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+    }
+ }
+*/
+/*
+allprojects {
+    repositories {
+        mavenCentral()
+        exclusiveContent {
+	    forRepository {
+	        mavenCentral()
+	    }
+	    filter {
+	        includeGroup "de.robv.android.xposed"
+	    }
+        }
+        jcenter()
+	maven { url "https://plugins.gradle.org/m2/" }
+        google()
+    }
+}
+*/
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
