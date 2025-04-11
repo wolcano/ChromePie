@@ -3,7 +3,10 @@ buildscript {
         gradlePluginPortal()
         google()
         mavenCentral()
-	maven { url "https://repo.spring.io/plugins-release/" }
+	//maven { url "https://repo.spring.io/plugins-release/" }
+        flatDir {
+            dirs "libs"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.0'
@@ -12,7 +15,10 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
-	maven { url "https://repo.spring.io/plugins-release/" }
+	//maven { url "https://repo.spring.io/plugins-release/" }
+        flatDir {
+            dirs "libs"
+        }
         jcenter()
 	maven { url "https://plugins.gradle.org/m2/" }
         google()
