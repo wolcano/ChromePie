@@ -49,9 +49,11 @@ plugins {
     id 'org.lsposed.lsplugin.jgit' version "1.1"
 }
 */
+/*
 plugins {
    id 'com.android.application'
 }
+*/
 
 apply plugin: 'com.android.application'
 
