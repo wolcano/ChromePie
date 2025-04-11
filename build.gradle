@@ -43,7 +43,6 @@ include ':app'
 include ':libxposed-compat'
 */
 
-apply plugin: 'com.android.application'
 /*
 plugins {
     id 'com.android.application' version '8.9.1' apply false
@@ -53,6 +52,8 @@ plugins {
 plugins {
    id 'com.android.application'
 }
+
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
