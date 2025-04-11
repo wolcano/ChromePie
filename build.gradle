@@ -12,14 +12,7 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
-        exclusiveContent {
-	    forRepository {
-	        mavenCentral()
-	    }
-	    filter {
-	        includeGroup "de.robv.android.xposed"
-	    }
-        }
+	maven { url "https://repo.spring.io/libs-milestone/" }
         jcenter()
 	maven { url "https://plugins.gradle.org/m2/" }
         google()
