@@ -20,7 +20,7 @@ public class PieReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals(FULLSCREEN_UPDATED_INTENT)) {
             SharedPreferences prefs = context.getSharedPreferences(
-                    context.getPackageName() + "_preferences", Context.MODE_WORLD_READABLE);
+                    context.getPackageName() + "_preferences", Context.MODE_PRIVATE);
             boolean isFullscreen = intent.getBooleanExtra("IS_FULLSCREEN", false);
             prefs.edit().putBoolean("launch_in_fullscreen", isFullscreen).apply();
         } else if (intent.getAction().equals(EXPAND_NOTIFICATIONS_INTENT)) {
