@@ -35,10 +35,10 @@ public class MenuPreferenceFragment extends PreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getPreferenceManager().setSharedPreferencesMode(Context.MODE_WORLD_READABLE);
+        getPreferenceManager().setSharedPreferencesMode(Context.MODE_PRIVATE);
         addPreferencesFromResource(R.xml.menu_preferences);
         mSharedPrefs = getActivity().getSharedPreferences(
-                getPreferenceManager().getSharedPreferencesName(), Context.MODE_WORLD_READABLE);
+                getPreferenceManager().getSharedPreferencesName(), Context.MODE_PRIVATE);
 
         setHasOptionsMenu(true);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -64,7 +64,7 @@ public class MenuPreferenceFragment extends PreferenceFragment {
     @SuppressWarnings("deprecation")
     private void loadDefaultValues(boolean readAgain) {
         PreferenceManager.setDefaultValues(getActivity(), getPreferenceManager().getSharedPreferencesName(),
-                Context.MODE_WORLD_READABLE, R.xml.aosp_preferences, readAgain);
+                Context.MODE_PRIVATE, R.xml.aosp_preferences, readAgain);
 
         if (readAgain) {
             Editor editor = mSharedPrefs.edit();
