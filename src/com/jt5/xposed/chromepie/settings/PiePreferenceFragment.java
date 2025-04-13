@@ -25,10 +25,10 @@ public class PiePreferenceFragment extends PreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getPreferenceManager().setSharedPreferencesMode(Context.MODE_WORLD_READABLE);
+        getPreferenceManager().setSharedPreferencesMode(Context.MODE_PRIVATE);
         addPreferencesFromResource(R.xml.main_preferences);
         SharedPreferences prefs = getActivity().getSharedPreferences(
-                getPreferenceManager().getSharedPreferencesName(), Context.MODE_WORLD_READABLE);
+                getPreferenceManager().getSharedPreferencesName(), Context.MODE_PRIVATE);
 
         // Committing a value to shared preferences ensures they are
         // world readable in case readability was reset somehow
@@ -40,7 +40,7 @@ public class PiePreferenceFragment extends PreferenceFragment {
         // we can presume this is a new install
         if (!prefs.contains("screen_slice_1")) {
             PreferenceManager.setDefaultValues(getActivity(), getPreferenceManager().getSharedPreferencesName(),
-                    Context.MODE_WORLD_READABLE, R.xml.aosp_preferences, false);
+                    Context.MODE_PRIVATE, R.xml.aosp_preferences, false);
         }
 
         final Preference killChrome = findPreference("kill_chrome");
