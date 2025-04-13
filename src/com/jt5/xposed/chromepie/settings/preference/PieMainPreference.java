@@ -43,9 +43,9 @@ public class PieMainPreference extends Preference implements View.OnClickListene
     @Override
     protected void onAttachedToHierarchy(PreferenceManager preferenceManager) {
         super.onAttachedToHierarchy(preferenceManager);
-        preferenceManager.setSharedPreferencesMode(Context.MODE_WORLD_READABLE);
+        preferenceManager.setSharedPreferencesMode(Context.MODE_PRIVATE);
         mSharedPrefs = getContext().getSharedPreferences(
-                preferenceManager.getSharedPreferencesName(), Context.MODE_WORLD_READABLE);
+                preferenceManager.getSharedPreferencesName(), Context.MODE_PRIVATE);
         persistBoolean(true);
         mPreferenceCategory = (PreferenceCategory) preferenceManager.findPreference("pie_slices_cat");
         preferenceManager.findPreference("new_slice").setEnabled(
