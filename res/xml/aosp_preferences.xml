@@ -73,22 +73,22 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_4_item_1"
-        android:defaultValue="next_tab" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_4_item_2"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_4_item_3"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_4_item_4"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_4_item_5"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_4_item_6"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="new_tab" />
 
     <SwitchPreference
         android:key="screen_slice_5"
