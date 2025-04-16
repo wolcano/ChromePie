@@ -7,16 +7,16 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_1_item_1"
-        android:defaultValue="settings" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_1_item_2"
-        android:defaultValue="desktop_site" />
+        android:defaultValue="new_incognito_tab" />
     <ListPreference
         android:key="slice_1_item_3"
-        android:defaultValue="none" />
+        android:defaultValue="open_recently_closed" />
     <ListPreference
         android:key="slice_1_item_4"
-        android:defaultValue="none" />
+        android:defaultValue="show_tabs" />
     <ListPreference
         android:key="slice_1_item_5"
         android:defaultValue="none" />
