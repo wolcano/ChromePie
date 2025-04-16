@@ -29,16 +29,16 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_2_item_1"
-        android:defaultValue="refresh" />
+        android:defaultValue="open_recently_closed" />
     <ListPreference
         android:key="slice_2_item_2"
-        android:defaultValue="back" />
+        android:defaultValue="close_tab" />
     <ListPreference
         android:key="slice_2_item_3"
-        android:defaultValue="forward" />
+        android:defaultValue="desktop_site" />
     <ListPreference
         android:key="slice_2_item_4"
-        android:defaultValue="none" />
+        android:defaultValue="reader_mode" />
     <ListPreference
         android:key="slice_2_item_5"
         android:defaultValue="none" />
@@ -51,13 +51,13 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_3_item_1"
-        android:defaultValue="find_in_page" />
+        android:defaultValue="edit_url" />
     <ListPreference
         android:key="slice_3_item_2"
-        android:defaultValue="share" />
+        android:defaultValue="next_tab" />
     <ListPreference
         android:key="slice_3_item_3"
-        android:defaultValue="edit_url" />
+        android:defaultValue="previous_tab" />
     <ListPreference
         android:key="slice_3_item_4"
         android:defaultValue="none" />
@@ -73,13 +73,13 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_4_item_1"
-        android:defaultValue="new_tab" />
+        android:defaultValue="close_tab" />
     <ListPreference
         android:key="slice_4_item_2"
         android:defaultValue="new_incognito_tab" />
     <ListPreference
         android:key="slice_4_item_3"
-        android:defaultValue="open_recently_closed" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_4_item_4"
         android:defaultValue="show_tabs" />
