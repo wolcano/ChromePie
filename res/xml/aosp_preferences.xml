@@ -51,16 +51,16 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_3_item_1"
-        android:defaultValue="edit_url" />
+        android:defaultValue="none" />
     <ListPreference
         android:key="slice_3_item_2"
-        android:defaultValue="next_tab" />
+        android:defaultValue="edit_url" />
     <ListPreference
         android:key="slice_3_item_3"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="next_tab" />
     <ListPreference
         android:key="slice_3_item_4"
-        android:defaultValue="none" />
+        android:defaultValue="previous_tab" />
     <ListPreference
         android:key="slice_3_item_5"
         android:defaultValue="none" />
