@@ -4,7 +4,7 @@
 
     <SwitchPreference
         android:key="screen_slice_1"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
     <ListPreference
         android:key="slice_1_item_1"
         android:defaultValue="new_tab" />
@@ -16,6 +16,9 @@
         android:defaultValue="open_recently_closed" />
     <ListPreference
         android:key="slice_1_item_4"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_1_item_5"
         android:defaultValue="show_tabs" />
 
     <SwitchPreference
