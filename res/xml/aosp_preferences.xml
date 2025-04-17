@@ -4,7 +4,7 @@
 
     <SwitchPreference
         android:key="screen_slice_1"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
     <ListPreference
         android:key="slice_1_item_1"
         android:defaultValue="new_tab" />
@@ -16,22 +16,79 @@
         android:defaultValue="open_recently_closed" />
     <ListPreference
         android:key="slice_1_item_4"
-        android:defaultValue="none" />
+        android:defaultValue="show_tabs" />
     <ListPreference
         android:key="slice_1_item_5"
-        android:defaultValue="show_tabs" />
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_1_item_6"
+        android:defaultValue="none" />
 
     <SwitchPreference
         android:key="screen_slice_2"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
+    <ListPreference
+        android:key="slice_2_item_1"
+        android:defaultValue="open_recently_closed" />
+    <ListPreference
+        android:key="slice_2_item_2"
+        android:defaultValue="close_tab" />
+    <ListPreference
+        android:key="slice_2_item_3"
+        android:defaultValue="desktop_site" />
+    <ListPreference
+        android:key="slice_2_item_4"
+        android:defaultValue="reader_mode" />
+    <ListPreference
+        android:key="slice_2_item_5"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_2_item_6"
+        android:defaultValue="none" />
 
     <SwitchPreference
         android:key="screen_slice_3"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
+    <ListPreference
+        android:key="slice_3_item_1"
+        android:defaultValue="edit_url" />
+    <ListPreference
+        android:key="slice_3_item_2"
+        android:defaultValue="next_tab" />
+    <ListPreference
+        android:key="slice_3_item_3"
+        android:defaultValue="previous_tab" />
+    <ListPreference
+        android:key="slice_3_item_4"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_3_item_5"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_3_item_6"
+        android:defaultValue="none" />
 
     <SwitchPreference
         android:key="screen_slice_4"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
+    <ListPreference
+        android:key="slice_4_item_1"
+        android:defaultValue="next_tab" />
+    <ListPreference
+        android:key="slice_4_item_2"
+        android:defaultValue="previous_tab" />
+    <ListPreference
+        android:key="slice_4_item_3"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_4_item_4"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_4_item_5"
+        android:defaultValue="none" />
+    <ListPreference
+        android:key="slice_4_item_6"
+        android:defaultValue="none" />
 
     <SwitchPreference
         android:key="screen_slice_5"
