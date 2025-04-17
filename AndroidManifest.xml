@@ -53,6 +53,12 @@
         <meta-data
             android:name="xposeddescription"
             android:value="@string/app_description" />
+        <meta-data
+                android:name="xposedsharedprefs"
+                android:value="true"/>
+        <meta-data
+                android:name="xposedscope"
+                android:value="com.android.chrome;org.bromite.bromite;org.cromite.cromite"/>
 
     </application>
 
