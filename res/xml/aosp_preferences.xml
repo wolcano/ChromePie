@@ -10,13 +10,13 @@
         android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_1_item_2"
-        android:defaultValue="new_incognito_tab" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_1_item_3"
-        android:defaultValue="open_recently_closed" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_1_item_4"
-        android:defaultValue="show_tabs" />
+        android:defaultValue="new_tab" />
     <ListPreference
         android:key="slice_1_item_5"
         android:defaultValue="none" />
