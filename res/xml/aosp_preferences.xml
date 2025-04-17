@@ -73,10 +73,10 @@
         android:defaultValue="true" />
     <ListPreference
         android:key="slice_4_item_1"
-        android:defaultValue="next_tab" />
+        android:defaultValue="none" />
     <ListPreference
         android:key="slice_4_item_2"
-        android:defaultValue="previous_tab" />
+        android:defaultValue="none" />
     <ListPreference
         android:key="slice_4_item_3"
         android:defaultValue="next_tab" />
